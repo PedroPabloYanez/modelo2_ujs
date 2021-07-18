@@ -1,1 +1,3 @@
-document.getElementById('edit').innerHTML = '<%= j render "form", post: @post%>'
+$('#modal-posts-title').html("Editar Post");
+$('#modal-body-posts').html('<%= j render "form", post: @post %>');
+$('#modalPosts').modal("show");
